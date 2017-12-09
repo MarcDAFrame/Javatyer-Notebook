@@ -272,7 +272,6 @@ $(document).ready(function () {
     function textarea() {
         $('textarea').each(function (index) {
             var rows = $(this).val().split("\n");
-            
             if(rows.length < 7){
                 $(this).prop('rows', 7);
             }else{
@@ -280,7 +279,7 @@ $(document).ready(function () {
             }
  
             $(this).keyup(function (e) {
-                console.log()
+                var rows = $(this).val().split("\n");                
                 if(rows.length < 7){
                     $(this).prop('rows', 7);
                 }else{

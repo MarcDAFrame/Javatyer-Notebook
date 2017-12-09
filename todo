@@ -3,3 +3,5 @@
 - clean up the code, it got a little messy with me trying to push out this version
 - new logo
 - terminal commands same as jupyter
+- dynamically change class name and methods
+- have a class span over multiple cells
