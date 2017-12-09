@@ -1,0 +1,104 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="static/css/test.css">
+    <script src="static/js/jquery-3.2.1.js"></script>
+    <script src="static/js/ide.js"></script>
+
+</head>
+
+<body>
+    <div class="header">
+        <ul>
+            <!-- <li><a href="#home">Home</a></li>
+                <li><a href="#news">News</a></li> -->
+            <!-- <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </li> -->
+            <li>
+                <img src="static/img/logo.png" style="height: 36px; padding-left: 10px; padding-bottom: 3px; padding-top: 3px;" />
+            </li>
+            <li class="dropdown">
+                <a class="dropbtn">File</a>
+                <div class="dropdown-content">
+                    <a id="newfile">new</a>
+                    <a id="save">save</a>
+                    <a id="load">load</a>
+
+                </div>
+            </li>
+            <li class="dropdown">
+                <a class="dropbtn">Insert</a>
+                <div class="dropdown-content">
+                    <a id="insert-main-method">Main Method</a>
+
+                </div>
+            </li>
+            <li>
+                <a id="run">&#9654;</a>
+            </li>
+            <li>
+                <a id="add-cell">+</a>
+            </li>
+        </ul>
+
+    </div>
+    <div class="content" id="content">
+
+
+
+        <div class="cell cell-highlight" id="cell-selected">
+            <div class="in">
+                <textarea style="width:100%" rows=5 name="ide" form="code" class="cell-text"></textarea>
+            </div>
+            <div class="out">
+                <p class="out-console"></p>
+                <p class="out-output"></p>
+                <p class="out-debug"></p>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <!-- Load Modal -->
+    <div class="modal" id="load-modal">
+
+        <div class="modal-content">
+            <span id="load-close">&times;</span>
+            <br>
+            <br>
+            <span>Directory</span>
+            <input type="text" id="loadfiletxt" value=""></input>
+            <button id="loadfilebtn">Load</button>
+        </div>
+
+    </div>
+
+
+    <!-- Save Modal -->
+    <div class="modal" id="save-modal">
+
+        <div class="modal-content">
+            <span id="save-close">&times;</span>
+            <br>
+            <br>
+            <span>Directory</span>
+            <input type="text" id="directorytxt" value=""></input>
+            <span>Filename</span>
+            <input type="text" id="filenametxt" value="test.json"></input>
+            <button id="savebtn">Save</button>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
