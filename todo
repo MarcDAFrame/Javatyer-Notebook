@@ -5,3 +5,4 @@
 - terminal commands same as jupyter
 - dynamically change class name and methods
 - have a class span over multiple cells
+- save to html / ipynb for display on github
