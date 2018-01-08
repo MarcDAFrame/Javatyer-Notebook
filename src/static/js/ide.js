@@ -25,11 +25,10 @@ $(document).ready(function () {
         $("#content").children().each(function(){
             $(this).remove();
         });      
-        $.each(cell_json['cells'], function(index, element){
-            console.log(index, element)
-            console.log(element);
-            append_cell(element);
-        });saves
+
+        for(let i = 0; i < Object.keys(cell_json['cells']).length; i++){
+            append_cell(cell_json['cells']['cell'+i]);
+        };
         select_first_cell();
     }
 
